@@ -15,4 +15,8 @@ export const NavLinks = [
     path: "/reviews",
     name: "Reviews",
   },
+  {
+    path: "/login",
+    name: "Login",
+  },
 ];
