@@ -9,16 +9,14 @@ type TInputProps = {
 
 const CarInput = ({ type, name, label }: TInputProps) => {
   return (
-    <div>
-      <Controller
-        name={name}
-        render={({ field }) => (
-          <Form.Item label={label}>
-            <Input {...field} type={type} id={name} />
-          </Form.Item>
-        )}
-      />
-    </div>
+    <Controller
+      name={name}
+      render={({ field }) => (
+        <Form.Item label={label}>
+          <Input {...field} type={type} id={name} />
+        </Form.Item>
+      )}
+    />
   );
 };
 

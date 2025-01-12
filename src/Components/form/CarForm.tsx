@@ -25,13 +25,11 @@ const CarForm = ({ onSubmit, children, resolver }: TFormProps) => {
   }
   const methods = useForm();
   return (
-    <div>
-      <FormProvider {...methods}>
-        <Form layout="vertical" onFinish={methods.handleSubmit(onSubmit)}>
-          {children}
-        </Form>
-      </FormProvider>
-    </div>
+    <FormProvider {...methods}>
+      <Form layout="vertical" onFinish={methods.handleSubmit(onSubmit)}>
+        {children}
+      </Form>
+    </FormProvider>
   );
 };
 

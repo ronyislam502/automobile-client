@@ -13,17 +13,15 @@ type TSelectProps = {
 
 const CarSelect = ({ label, name, options }: TSelectProps) => {
   return (
-    <div>
-      <Controller
-        name={name}
-        render={({ field, fieldState: { error } }) => (
-          <Form.Item label={label}>
-            <Select {...field} options={options} />
-            {error && <small>{error?.message}</small>}
-          </Form.Item>
-        )}
-      />
-    </div>
+    <Controller
+      name={name}
+      render={({ field, fieldState: { error } }) => (
+        <Form.Item label={label}>
+          <Select {...field} options={options} />
+          {error && <small>{error?.message}</small>}
+        </Form.Item>
+      )}
+    />
   );
 };
 
