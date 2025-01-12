@@ -1,4 +1,3 @@
-import Login from "../Pages/Auth/Login";
 import Home from "../Pages/Home/Home";
 import Services from "../Pages/Services/Services";
 
@@ -14,10 +13,5 @@ export const pageRoutes = [
         element: <Services />,
       },
     ],
-  },
-  {
-    name: "Login",
-    path: "/login",
-    element: <Login />,
   },
 ];
