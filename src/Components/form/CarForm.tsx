@@ -18,7 +18,11 @@ type TFormProps = {
   children: ReactNode;
 } & TFormConfig;
 
-const CarForm = ({ onSubmit, children }: TFormProps) => {
+const CarForm = ({ onSubmit, children, resolver }: TFormProps) => {
+  const formConfig: TFormConfig = {};
+  if (resolver) {
+    formConfig["resolver"] = resolver;
+  }
   const methods = useForm();
   return (
     <div>
