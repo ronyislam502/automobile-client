@@ -3,9 +3,9 @@ import { NavLinks } from "./NavLinks";
 
 const Navbar = () => {
   return (
-    <div className="h-[60px] flex justify-between items-center lg:px-[60px] px-5 py-2 bg-slate-200 text-slate-950">
+    <div className="h-[60px] lg:px-[60px] flex justify-between px-5 py-2 bg-opacity-30 text-black">
       <Link to="/" className="flex gap-x-2 items-center">
-        <img src="FT.png" alt="" className="h-[42px]" />
+        <img src="" alt="" className="h-[42px]" />
         <p className="text-3xl font-bold">
           <span className="text-primary">Car</span>
           <span className="text-primary-foreground">Wash</span>

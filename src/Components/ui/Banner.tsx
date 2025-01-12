@@ -7,35 +7,38 @@ const Banner = () => {
   return (
     <Carousel autoPlay={true} infiniteLoop={true} interval={3000}>
       <div className="relative">
-        <img src="https://i.postimg.cc/LXqc88Bj/b1.jpg" className="w-50%" />
-        <div className="absolute lg:top-[40%] top-[8%] lg:left-[300px] left-8">
-          <p className=" text-white lg:text-4xl text-2xl font-semibold mb-6">
-            "Experience Premium Car Wash Services"
+        <img src="https://i.postimg.cc/bYM2T1qy/hero-slider-bg-2.png" />
+        <div className="absolute top-10 left-16 lg:top-80 right-20">
+          <h1 className="text-white lg:text-7xl text-2xl font-semibold mb-6">
+            CAR REPAIR & AUTO SERVICES
+          </h1>
+          <p className=" text-white lg:text-4xl font-semibold mb-6">
+            Our skilled team of certified technicians is here to provide
+            top-notch car <br /> repair and auto services to ensure your vehicle
+            performs at its best.
           </p>
           <Link to="/services">
-            <Button className="btn btn-primary">Explore our services</Button>
+            <Button color="cyan" variant="solid" size="large">
+              Explore our services
+            </Button>
           </Link>
         </div>
       </div>
       <div className="relative">
-        <img src="https://i.postimg.cc/L4Pddhsp/b2.webp" />
-        <div className="absolute lg:top-[40%] top-[8%] lg:left-[300px] left-8">
-          <p className=" text-white lg:text-4xl text-2xl font-semibold mb-6">
-            "Experience Premium Car Wash Services"
+        <img src="https://i.postimg.cc/hGSJjr1r/hero-slider-bg-1.png" />
+        <div className="absolute top-10 left-16 lg:top-80 right-20">
+          <h1 className="text-white lg:text-7xl text-2xl font-semibold mb-6">
+            CAR REPAIR & AUTO SERVICES
+          </h1>
+          <p className=" text-white lg:text-4xl font-semibold mb-6">
+            Our skilled team of certified technicians is here to provide
+            top-notch car <br /> repair and auto services to ensure your vehicle
+            performs at its best.
           </p>
           <Link to="/services">
-            <button className="btn btn-primary ">Explore our services</button>
-          </Link>
-        </div>
-      </div>
-      <div className="relative">
-        <img src="https://i.postimg.cc/W127gM29/1.jpg" />
-        <div className="absolute lg:top-[40%] top-[8%] lg:left-[300px] left-8">
-          <p className=" text-white lg:text-4xl text-2xl font-semibold mb-6">
-            "Experience Premium Car Wash Services"
-          </p>
-          <Link to="/services">
-            <Button className="btn btn-primary">Explore our services</Button>
+            <Button color="cyan" variant="solid" size="large">
+              Explore our services
+            </Button>
           </Link>
         </div>
       </div>
