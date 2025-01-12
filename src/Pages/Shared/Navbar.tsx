@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MenuLinks } from "./MenuLinks";
+import { NavLinks } from "./NavLinks";
 
 const Navbar = () => {
   return (
@@ -12,9 +12,9 @@ const Navbar = () => {
         </p>
       </Link>
       <div className="md:flex items-center gap-x-3 font-medium hidden">
-        {MenuLinks?.map((menu, idx) => (
-          <Link key={idx} to={menu?.path}>
-            {menu?.name}
+        {NavLinks?.map((navLink, idx) => (
+          <Link key={idx} to={navLink?.path}>
+            {navLink?.name}
           </Link>
         ))}
         {/* {conditionalLinks} */}

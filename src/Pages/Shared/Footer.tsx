@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MenuLinks } from "./MenuLinks";
+import { NavLinks } from "./NavLinks";
 
 const Footer = () => {
   return (
@@ -15,11 +15,11 @@ const Footer = () => {
         </p>
       </div>
       <div className="lg:w-[33.33%] flex flex-col items-center">
-        <p className="text-lg font-semibold mb-5">Important links</p>
+        <p className="text-lg font-semibold mb-5">Important Links</p>
         <div className="flex flex-col text-center gap-y-2 font-medium">
-          {MenuLinks?.map((menu, idx) => (
-            <Link key={idx} to={menu?.path}>
-              {menu?.name}
+          {NavLinks?.map((navLink, idx) => (
+            <Link key={idx} to={navLink?.path}>
+              {navLink?.name}
             </Link>
           ))}
         </div>

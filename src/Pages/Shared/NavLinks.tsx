@@ -1,4 +1,4 @@
-export const MenuLinks = [
+export const NavLinks = [
   {
     path: "/",
     name: "Home",
