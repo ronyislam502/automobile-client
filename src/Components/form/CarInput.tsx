@@ -13,7 +13,7 @@ const CarInput = ({ type, name, label }: TInputProps) => {
       name={name}
       render={({ field }) => (
         <Form.Item label={label}>
-          <Input {...field} type={type} id={name} />
+          <Input {...field} type={type} id={name} size="large" />
         </Form.Item>
       )}
     />

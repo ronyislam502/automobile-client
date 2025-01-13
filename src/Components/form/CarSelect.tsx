@@ -17,7 +17,7 @@ const CarSelect = ({ label, name, options }: TSelectProps) => {
       name={name}
       render={({ field, fieldState: { error } }) => (
         <Form.Item label={label}>
-          <Select {...field} options={options} />
+          <Select {...field} options={options} size="large" />
           {error && <small>{error?.message}</small>}
         </Form.Item>
       )}
